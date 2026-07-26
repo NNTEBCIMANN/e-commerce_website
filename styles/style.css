@@ -1,6 +1,22 @@
 @font-face {
-    font-family: ;
-    src: url();
+    font-family: AlfaSlabOne;
+    src: url(../fonts/AlfaSlabOne-Regular.ttf);
+}
+@font-face {
+    font-family: IntegralCF;
+    src: url(../fonts/IntegralCF-Bold.otf);
+}
+@font-face {
+    font-family: Satoshi-Regular;
+    src: url(../fonts/Satoshi-Regular.otf);
+}
+@font-face {
+    font-family: Satoshi-Medium;
+    src: url(../fonts/Satoshi-Medium.otf);
+}
+@font-face {
+    font-family: Satoshi-Bold;
+    src: url(../fonts/Satoshi-Bold.otf);
 }
 *{
     margin: 0;
@@ -9,7 +25,9 @@
     text-decoration: none;
     list-style-type: none;
     scroll-behavior: smooth;
-
-    color: #fff;
-    background-color: #101015;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
