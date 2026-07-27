@@ -7,15 +7,15 @@
     src: url(../fonts/IntegralCF-Bold.otf);
 }
 @font-face {
-    font-family: Satoshi-Regular;
+    font-family: SatoshiR;
     src: url(../fonts/Satoshi-Regular.otf);
 }
 @font-face {
-    font-family: Satoshi-Medium;
+    font-family: SatoshiM;
     src: url(../fonts/Satoshi-Medium.otf);
 }
 @font-face {
-    font-family: Satoshi-Bold;
+    font-family: SatoshiB;
     src: url(../fonts/Satoshi-Bold.otf);
 }
 *{
@@ -25,9 +25,165 @@
     text-decoration: none;
     list-style-type: none;
     scroll-behavior: smooth;
+    font-family: SatoshiR;
 }
 .flex{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media only screen and (max-width: 1440px){
+header{
+    padding: 62px 100px 24px;
+    position: relative;
+}
+header h1 a{
+    font-family: AlfaSlabOne;
+    font-size: 32px;
+    color: #000;
+}
+header nav{
+    gap: 24px;
+}
+header nav a{
+    color: #000;
+}
+#dropDown{
+    border: none;
+    font-size: 16px;
+    width: 57px;
+}
+.search{
+    width: 586px;
+    background-color: #F0F0F0;
+    padding: 12px 16px;
+    gap: 12px;
+    border-radius: 62px;
+}
+.search input{
+    background-color: #F0F0F0;
+    font-size: 16px;
+    border: none;
+    width: 100%;
+}
+.cartAndAcc{
+    gap: 14px;
+}
+.signUp{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+    padding:  10px 100px;
+    width: 100%;
+    text-align: center;
+}
+.signUp a{
+    font-family: SatoshiM;
+    color: #fff;
+    border-bottom: solid 2px #fff;
+}
+.x{
+    position: absolute;
+    top: 9px;
+    right: 100px;
+}
+
+.main{
+    width: 100%;
+    height: 500px;
+}
+
+footer{
+    background-color: #F0F0F0;
+    height: 500px;
+    position: relative;
+    padding: 140px 100px 82px;
+}
+footer>div.flex{
+    margin-bottom: 50px;
+}
+footer>div:last-child{
+    margin-bottom: 0;
+}
+.uptoDate{
+    position: absolute;
+    top: -90px;
+    left: 100px;
+    background-color: #000;
+    width: 1240px;
+    padding: 36px 64px;
+    border-radius: 20px;
+}
+.uptoDate h2{
+    color: #fff;
+    font-family: IntegralCF;
+    font-size: 40px;
+    width: 551px;
+}
+.mail{
+    background-color: #fff;
+    width: 349px;
+    gap: 12px;
+    padding: 12px 16px;
+    border-radius: 62px;
+    margin-bottom: 14px;
+}
+.mail input{
+    border: none;
+    width: 100%;
+    font-size: 16px;
+}
+.uptoDate #mailSubmit{
+    background-color: #fff;
+    width: 349px;
+    padding: 12px 16px;
+    border-radius: 62px;
+    border: none;
+    font-size: 16px;
+    font-family: SatoshiM;
+}
+.info section:first-child{
+    width: 248px;
+}
+.info section:first-child h2{
+    font-family: IntegralCF;
+    font-size: 34px;
+    margin-bottom: 25px;
+}
+.info section:first-child p{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+    padding-bottom: 35px;
+    line-height: 22px;
+}
+.info section:first-child div{
+    width: 148px;
+}
+.info section h3{
+    font-family: SatoshiM;
+    font-weight: 200;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+.info section ul li a{
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 16px;
+    margin-top: 17px;
+    display: inline-block;
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.rights p{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
 }

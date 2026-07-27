@@ -5,18 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Nika Maisuradze">
     <link rel="stylesheet" href="./styles/style.css">
-    <!-- <link rel="icon" href="./images/"> -->
-    <title>Template</title>
+    <link rel="icon" href="./images/shineParticle.png">
+    <title>SHOP.CO</title>
 </head>
 <body>
     <header class="flex">
         <h1><a href="index.html">SHOP.CO</a></h1>
+        <nav class="flex">
+            <select id="dropDown">
+                <option value="shop">Shop</option>
+                <option value="contactUs">Contact Us</option>
+                <option value="aboutUs">About Us</option>
+                <option value="murtazi">Murtazi</option>
+            </select>
+            <p><a href="#">On Sale</a></p>
+            <p><a href="#">New Arrivals</a></p>
+            <p><a href="#">Brands</a></p>
+        </nav>
+        <div class="search flex">
+            <img src="images/search.png" alt="Search Button">
+            <input type="search" name="search" id="search" placeholder="Search for products...">
+        </div>
+        <div class="cartAndAcc flex">
+            <img src="images/cart.png" alt="Cart">
+            <img src="images/acc.png" alt="Account">
+        </div>
+        <p class="signUp">
+            Sign up and get 20% off to your first order. 
+            <span><a href="#">Sign Up Now</a></span>
+        </p>
+        <img src="images/x.png" alt="X" class="x">
     </header>
     <main>
-
+        <div class="main"></div>
     </main>
     <footer>
-
+        <div class="uptoDate flex">
+            <h2>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
+            <form>
+                <div class="mail flex">
+                    <img src="images/email.png" alt="EMail">
+                    <input type="email" name="email" id="email" placeholder="Enter your email address">
+                </div>
+                <input type="submit" name="submit" id="mailSubmit" value="Subscribe to Newsletter">
+            </form>
+        </div>
+        <div class="info flex">
+            <section>
+                <h2>SHOP.CO</h2>
+                <p>
+                    We have clothes that suits your style and which you<span>&rsquo;</span>re proud to wear. From women to men.
+                </p>
+                <div class="socMedia flex">
+                    <img src="images/tweeter.png" alt="Tweeter">
+                    <img src="images/fb.png" alt="Facebook">
+                    <img src="images/ig.png" alt="Instagram">
+                    <img src="images/gitHub.png" alt="GitHub">
+                </div>
+            </section>
+            <section>
+                <h3>COMPANY</h3>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Works</a></li>
+                    <li><a href="#">Career</a></li>
+                </ul>
+            </section>
+            <section>
+                <h3>HELP</h3>
+                <ul>
+                    <li><a href="#">Customer Support</a></li>
+                    <li><a href="#">Delivery Details</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </section>
+            <section>
+                <h3>FAQ</h3>
+                <ul>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Manage Deliveries</a></li>
+                    <li><a href="#">Orders</a></li>
+                    <li><a href="#">Payments</a></li>
+                </ul>
+            </section>
+            <section>
+                <h3>RESOURCES</h3>
+                <ul>
+                    <li><a href="#">Free eBooks</a></li>
+                    <li><a href="#">Development Tutorial</a></li>
+                    <li><a href="#">How to - Blog</a></li>
+                    <li><a href="#">Youtube Playlist</a></li>
+                </ul>
+            </section>
+        </div>
+        <div class="line"></div>
+        <div class="rights flex">
+            <p>Shop.co <span>&copy;</span> 2000-2023, All Rights Reserved</p>
+            <div class="flex">
+                <img src="images/visa.png" alt="Visa">
+                <img src="images/mc.png" alt="MasterCard">
+                <img src="images/paypal.png" alt="PayPal">
+                <img src="images/applePay.png" alt="Apple Pay">
+                <img src="images/googlePay.png" alt="Google Pay">
+            </div>
+        </div>
     </footer>
 </body>
 </html>
