@@ -18,6 +18,10 @@
     font-family: SatoshiB;
     src: url(../fonts/Satoshi-Bold.otf);
 }
+@font-face {
+    font-family: InterR;
+    src: url(../fonts/Inter_18pt-Regular.ttf);
+}
 *{
     margin: 0;
     padding: 0;
@@ -26,6 +30,7 @@
     list-style-type: none;
     scroll-behavior: smooth;
     font-family: SatoshiR;
+    font-weight: 400;
 }
 .flex{
     display: flex;
@@ -33,7 +38,15 @@
     align-items: center;
 }
 
-@media only screen and (max-width: 1440px){
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+
+                           H E A D E R 
+
+                            S T A R T 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/ 
+@media only screen and (min-width: 1440px){
 header{
     padding: 62px 100px 24px;
     position: relative;
@@ -70,6 +83,9 @@ header nav a{
 .cartAndAcc{
     gap: 14px;
 }
+.cartAndAcc a{  
+    margin-top: 4px;
+}
 .signUp{
     position: absolute;
     top: 0;
@@ -92,11 +108,483 @@ header nav a{
     right: 100px;
 }
 
-.main{
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+
+                             M A I N 
+
+                            S T A R T 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/ 
+.findClothes{
+    background-image: url(../images/people.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: cover;
     width: 100%;
-    height: 500px;
+    padding: 100px 100px 116px;
+    position: relative;
+}
+.findClothes>h2{
+    font-family: AlfaSlabOne;
+    font-size: 64px;
+    width: 577px;
+    line-height: 64px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.findClothes>p{
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+    width: 545px;
+    margin-bottom: 32px;
+}
+.findClothes button{
+    border: none;
+    background-color: #000;
+    width: 210px;
+    color: #fff;
+    padding: 16px 54px;
+    font-size: 16px;
+    font-family: SatoshiM;
+    border-radius: 62px;
+    margin-bottom: 48px;
+}
+.findClothes>div.flex{
+    width: 596px;
+}
+.vLine{
+    width: 1px;
+    height: 76px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.findClothes>div.flex h2, .findClothes span{
+    font-family: SatoshiB;
+    font-size: 40px;
+}
+.findClothes>div.flex p{
+    color: rgba(0, 0, 0, 0.6);
+}
+.findClothes span{
+    color: #000;
+    display: block;
+}
+.findClothes .shineParticle{
+    position: absolute;
+    top: 86px;
+    right: 80px;
+}
+.findClothes .shineParticleSmall{
+    width: 56px;
+    position: absolute;
+    top: 297px;
+    right:633px;
+}
+.brands{
+    background-color: #000;
+    padding: 44px 100px;
+}
+.newArrivals, 
+.topSelling{
+    padding: 68px 100px 64px;
+}
+.newArrivals h2, 
+.topSelling h2{
+    font-size: 48px;
+    font-family: AlfaSlabOne;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 51px;
+}
+.newArrivals .flex>div>img, 
+.topSelling .flex>div>img{
+    border-radius: 20px;
+    margin-bottom: 16px;
+}
+.newArrivals .flex>div>h3, 
+.topSelling .flex>div>h3{
+    font-family: SatoshiB;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+.newArrivals .rating, 
+.topSelling .rating, 
+.product .wholeInfo .rating{
+    width: fit-content;
+    margin-bottom: 8px;
+}
+.newArrivals .rating img, 
+.topSelling .rating img{
+    height: 18px;
+    margin-right: 5px;
+}
+.newArrivals .rating img:nth-child(5), 
+.topSelling .rating img:nth-child(5), 
+#FourStars, #ThreeStars{
+    margin-right: 0;
+}
+.newArrivals .rating p, 
+.topSelling .rating p{
+    margin-left: 13px;
+    font-size: 14px;
+}
+.newArrivals .rating span, 
+.topSelling .rating span{
+    color: rgba(0, 0, 0, 0.6);
+}
+.newArrivals .price, 
+.topSelling .price{
+    width: fit-content;
+    gap: 10px;
+}
+.newArrivals .price h3, 
+.topSelling .price h3{
+    font-family: SatoshiB;
+    font-size: 24px;
+}
+.newArrivals #Discount h3:nth-child(2), 
+.topSelling #Discount h3:nth-child(2){
+    color: rgba(0, 0, 0, 0.4);
+    text-decoration: line-through;
+}
+.newArrivals #Discount p, 
+.topSelling #Discount p{
+    font-family: SatoshiM;
+    font-size: 12px;
+    color: #FF3333;
+    background-color: rgba(255, 51, 51, 0.1);
+    padding: 6px 14px;
+    border-radius: 62px;
+}
+.newArrivals button, 
+.topSelling button{
+    display: block;
+    font-family: SatoshiM;
+    padding: 16px 64px;
+    border: solid 1px rgba(0, 0, 0, 0.1);
+    border-radius: 62px;
+    margin: 36px auto 0;
+    background-color: #fff;
+}
+.browseBy.flex{
+    background-color: #F0F0F0;
+    border-radius: 40px;
+    margin: 16px 100px 80px;
+    padding: 70px 64px 76px;
+    flex-wrap: wrap;
+    height: fit-content;
+    gap: 20px;
+}
+.browseBy h2{
+    font-family: IntegralCF;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 64px;
+    font-weight: 400;
+    width: 100%;
+}
+.browseBy .casual{
+    width: 407px;
+    height: 289px;
+    background-image: url(../images/casual.png);
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    overflow: hidden;
+    background-size: cover;
+}
+.browseBy .formal{
+    width: 684px;
+    height: 289px;
+    background-image: url(../images/formal.png);
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    overflow: hidden;
+    background-size: cover;
+}
+.browseBy .party{
+    width: 684px;
+    height: 289px;
+    background-image: url(../images/party.png);
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    overflow: hidden;
+    background-size: cover;
+}
+.browseBy .gym{
+    width: 407px;
+    height: 289px;
+    background-image: url(../images/gym.png);
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    overflow: hidden;
+    background-size: cover;
+}
+.browseBy a{
+    display: inline-block;
+    color: #000;
+    font-family: SatoshiB;
+    font-size: 36px;
+    margin: 25px 36px;
+}
+.happyCustomers{
+    margin: 0 100px 170px;
+    flex-wrap: wrap;
+}
+.happyCustomers>div{
+    width: 100%;
+}
+.happyCustomers h2{
+    font-family: IntegralCF;
+    font-size: 48px;
+}
+.happyCustomers #LArrow{
+    margin-right: 16px;
+}
+.happyCustomers #RArrow{
+    transform: rotate(180deg);
+}
+.happyCustomers section{
+    margin-top: 40px;
+    padding: 28px 32px;
+    width: fit-content;
+    height: 240px;
+    border: solid 1px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+.happyCustomers section>div:first-child{
+    width: 139px;
+}
+.happyCustomers .user{
+    width: fit-content;
+    margin: 15px 0  12px;
+    gap: 4px;
+}
+.happyCustomers .user h3{
+    font-family: SatoshiB;
+    font-size: 20px;
+}
+.happyCustomers section p{
+    width: 336px;
+    color: rgba(0, 0, 0, 0.6);
 }
 
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+
+                            cart.html 
+
+                            S T A R T 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/ 
+.cart{
+    padding: 0 100px 350px;
+}
+.cart .path, 
+.product .path{
+    margin: 24px 0 24px;
+    width: fit-content;
+}
+.cart .path a, 
+.product .path a{
+    color: rgba(0, 0, 0, 0.6);
+    margin-right: 4px;
+}
+.cart .path p, 
+.product  .path p{
+    margin-left: 12px;
+}
+.cart h2{
+    font-family: IntegralCF;
+    font-size: 40px;
+}
+.cart h3{
+    text-align: center;
+    font-family: InterR;
+    font-size: 45px;
+    margin-top: 230px;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+
+                           product.html
+
+                            S T A R T 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/ 
+.product{
+    padding: 0 100px 168px;
+}
+.product .path{
+    margin-bottom: 42px;
+}
+.product section.flex{
+    gap: 40px;
+    width: fit-content;
+}
+.product .images.flex{
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 14px;
+    width: fit-content;
+    height: 530px;
+}
+.product .images img{
+    border-radius: 20px;
+}
+.product .images img:first-child{
+    border: solid 1px #000;
+    width: 152px;
+    height: 167px;
+}
+.product .prodInfo{
+    width: 600px;
+}
+.product .prodInfo h2{
+    font-family: IntegralCF;
+    font-size: 39px;
+    margin-bottom: 14px;
+}
+.product .rating{
+    gap: 7px;
+    margin-bottom: 14px;
+}
+.product .rating img{
+    height: 25px;
+}
+.product .rating p{
+    margin-left: 9px;
+}
+.product .price{
+    width: fit-content;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+.product .price h3{
+    font-family: SatoshiB;
+    font-size: 32px;
+    color: rgba(0, 0, 0, 0.3);
+    text-decoration: line-through;
+}
+.product .price h3:first-child{
+    text-decoration: none;
+    color: #000;
+}
+.product .price p{
+    font-family: SatoshiM;
+    color: #FF3333;
+    background-color: rgba(255, 51, 51, 0.1);
+    padding: 6px 14px;
+    border-radius: 62px;
+}
+.product .prodInfo>p{
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 24px;
+}
+.product .wholeInfo>p{
+    margin-bottom: 16px;
+    color: rgba(0, 0, 0, 0.6);
+}
+.product .line{
+    margin-bottom: 24px;
+}
+.product .colors{
+    width: fit-content;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+.product .colors .active{
+    background-image: url(../images/activeColor.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.product .colors .khaki{
+    border-radius: 50%;
+    width: 37px;
+    height: 37px;
+    background-color: #4f4631;
+}
+.product .colors .green{
+    border-radius: 50%;
+    width: 37px;
+    height: 37px;
+    background-color: #314f4a;
+}
+.product .colors .purple{
+    border-radius: 50%;
+    width: 37px;
+    height: 37px;
+    background-color: #31344f;
+}
+.product .sizes{
+    width:  fit-content;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+.product .sizes p{
+    padding: 12px 24px;
+    margin-bottom: 0;
+    color: rgba(0, 0, 0, 0.6);
+    border-radius: 62px;
+    background-color: #F0F0F0;
+}
+.product .sizes p.active{
+ background-color: #000;
+ color: #fff;
+}
+.product .buttons{
+    gap: 20px;
+    width: fit-content;
+}
+.product .amount{
+    width: fit-content;
+    padding: 14px 20px;
+    background-color: #f0f0f0;
+    border-radius: 62px;
+    gap: 38px;
+}
+.product .amount p{
+    margin-bottom: 0;
+    font-family: SatoshiM;
+}
+.product .buttons button{
+    font-family: SatoshiM;
+    padding: 15px 0;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    width: 400px;
+    height: 52px;
+    border-radius: 62px;
+}
+.product .fastButtons{
+    width: 100%;
+    margin: 80px 0 24px;
+}
+.product .fastButtons p{
+    padding-bottom: 24px;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    text-align: center;
+}
+.product .fastButtons p.active{
+    color: #000;
+    font-family: SatoshiM;
+    border-bottom: solid 2px #000;
+}
+
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+
+                           F O O T E R 
+
+                            S T A R T 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/ 
 footer{
     background-color: #F0F0F0;
     height: 500px;
@@ -153,6 +641,7 @@ footer>div:last-child{
     font-family: IntegralCF;
     font-size: 34px;
     margin-bottom: 25px;
+    color: #000;
 }
 .info section:first-child p{
     font-size: 14px;
@@ -185,5 +674,4 @@ footer>div:last-child{
     font-size: 14px;
     color: rgba(0, 0, 0, 0.6);
 }
-
 }
