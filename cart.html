@@ -10,8 +10,11 @@
 </head>
 <body>
     <header class="flex">
-        <h1><a href="index.html">SHOP.CO</a></h1>
-        <nav class="flex">
+        <div class="title flex">
+            <img src="images/bMenu.png" alt="Burger Menu" id="pcHidden">
+            <h1><a href="index.html">SHOP.CO</a></h1>
+        </div>
+        <nav class="flex" id="mobileHidden">
             <select id="dropDown">
                 <option value="shop">Shop</option>
                 <option value="contactUs">Contact Us</option>
@@ -22,11 +25,12 @@
             <p><a href="#">New Arrivals</a></p>
             <p><a href="#">Brands</a></p>
         </nav>
-        <div class="search flex">
+        <div class="search flex" id="mobileHidden">
             <img src="images/search.png" alt="Search Button">
             <input type="search" name="search" id="search" placeholder="Search for products...">
         </div>
         <div class="cartAndAcc flex">
+            <img src="images/searchMobile.png" alt="Search" id="pcHidden">
             <a href="cart.html">
                 <img src="images/cart.png" alt="Cart">
             </a>
@@ -36,7 +40,7 @@
             Sign up and get 20% off to your first order. 
             <span><a href="#">Sign Up Now</a></span>
         </p>
-        <img src="images/x.png" alt="X" class="x">
+        <img src="images/x.png" alt="X" class="x" id="mobileHidden">
     </header>
     <main class="cart">
         <div class="line"></div>
@@ -66,10 +70,10 @@
                     We have clothes that suits your style and which you<span>&rsquo;</span>re proud to wear. From women to men.
                 </p>
                 <div class="socMedia flex">
-                    <img src="images/tweeter.png" alt="Tweeter">
-                    <img src="images/fb.png" alt="Facebook">
-                    <img src="images/ig.png" alt="Instagram">
-                    <img src="images/gitHub.png" alt="GitHub">
+                    <a href="https://x.com/" target="_blank"><img src="images/tweeter.png" alt="Tweeter"></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="images/fb.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="images/ig.png" alt="Instagram"></a>
+                    <a href="https://github.com/" target="_blank"><img src="images/gitHub.png" alt="GitHub"></a>
                 </div>
             </section>
             <section>
@@ -113,11 +117,26 @@
         <div class="rights flex">
             <p>Shop.co <span>&copy;</span> 2000-2023, All Rights Reserved</p>
             <div class="flex">
-                <img src="images/visa.png" alt="Visa">
-                <img src="images/mc.png" alt="MasterCard">
-                <img src="images/paypal.png" alt="PayPal">
-                <img src="images/applePay.png" alt="Apple Pay">
-                <img src="images/googlePay.png" alt="Google Pay">
+                <a href="https://www.visa.com.ge/en_GE" target="_blank">
+                    <img src="images/visa.png" alt="Visa">
+                </a>
+                <a href="https://www.mastercard.com/us/en.html" target="_blank">
+                    <img src="images/mc.png" alt="MasterCard">
+                </a>
+                <a href="https://www.paypal.com/ge/home" target="_blank">
+                    <img src="images/paypal.png" alt="PayPal">
+                </a>
+                <a href="https://www.apple.com/apple-pay/" target="_blank">
+                    <img src="images/applePay.png" alt="Apple Pay">
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.nbu.paisa.user&hl=en" target="_blank">
+                    <img src="images/googlePay.png" alt="Google Pay">
+                </a>
+                
+                
+                
+                
+                
             </div>
         </div>
     </footer>
